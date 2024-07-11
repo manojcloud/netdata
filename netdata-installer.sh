@@ -59,7 +59,7 @@ NETDATA_SAVE_WARNINGS=1
 _cannot_use_tmpdir() {
   testfile="$(TMPDIR="${1}" mktemp -q -t netdata-test.XXXXXXXXXX)"
   ret=0
-
+#new change
   if [ -z "${testfile}" ]; then
     return "${ret}"
   fi
